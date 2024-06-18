@@ -1,0 +1,119 @@
+make[1]: Entering directory '/mnt/gentoo/home/ernes/Descargas/kernel-msm/kernel/msm-5.4/out'
+  GEN     Makefile
+"using default camera path"
+"techpack-dirs:=../techpack/display ../techpack/camera ../techpack/audio ../techpack/stub ../techpack/dataipa ../techpack/video"
+"HOLI SPECTRA_CAMERA IS MODULAR"
+"SPECTRA_CAMERA IS STATIC"
+"SPECTRA CAMERA IS BUILT AS DLKM"
+  CALL    ../scripts/atomic/check-atomics.sh
+  CALL    ../scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      mm/slub.o
+  CC      kernel/sched/walt/walt.o
+b'../mm/slub.c: In function \xe2\x80\x98alloc_trace_locations\xe2\x80\x99:\n' b'../mm/slub.c:6173:68: warning: format \xe2\x80\x98%zu\xe2\x80\x99 expects argument of type \xe2\x80\x98size_t\xe2\x80\x99, but argument 5 has type \xe2\x80\x98unsigned int\xe2\x80\x99 [-Wformat=]\n' error, forbidden warning: slub.c:6173
+make[2]: *** [../scripts/Makefile.build:288: mm/slub.o] Error 1
+make[1]: *** [/mnt/gentoo/home/ernes/Descargas/kernel-msm/kernel/msm-5.4/Makefile:1867: mm] Error 2
+make[1]: *** Waiting for unfinished jobs....
+  CC      crypto/asymmetric_keys/asymmetric_type.o
+  CC      crypto/asymmetric_keys/restrict.o
+b'../kernel/sched/walt/walt.c: In function \xe2\x80\x98walt_task_dump\xe2\x80\x99:\n' b'../kernel/sched/walt/walt.c:209:49: warning: format \xe2\x80\x98%llu\xe2\x80\x99 expects argument of type \xe2\x80\x98long long unsigned int\xe2\x80\x99, but argument 3 has type \xe2\x80\x98pid_t\xe2\x80\x99 {aka \xe2\x80\x98int\xe2\x80\x99} [-Wformat=]\n' error, forbidden warning: walt.c:209
+make[4]: *** [../scripts/Makefile.build:288: kernel/sched/walt/walt.o] Error 1
+make[3]: *** [../scripts/Makefile.build:558: kernel/sched/walt] Error 2
+make[2]: *** [../scripts/Makefile.build:558: kernel/sched] Error 2
+make[1]: *** [/mnt/gentoo/home/ernes/Descargas/kernel-msm/kernel/msm-5.4/Makefile:1867: kernel] Error 2
+  CC      crypto/asymmetric_keys/signature.o
+  CC      crypto/asymmetric_keys/public_key.o
+  CC      fs/proc/meminfo.o
+  ASN.1   crypto/asymmetric_keys/x509.asn1.[ch]
+  ASN.1   crypto/asymmetric_keys/x509_akid.asn1.[ch]
+  CC      crypto/asymmetric_keys/x509_public_key.o
+  ASN.1   crypto/asymmetric_keys/pkcs7.asn1.[ch]
+  CC      crypto/asymmetric_keys/pkcs7_trust.o
+b'../fs/proc/meminfo.c: In function \xe2\x80\x98show_val_kb\xe2\x80\x99:\n' b'../fs/proc/meminfo.c:52:69: warning: format \xe2\x80\x98%lld\xe2\x80\x99 expects argument of type \xe2\x80\x98long long int\xe2\x80\x99, but argument 4 has type \xe2\x80\x98long unsigned int\xe2\x80\x99 [-Wformat=]\n' error, forbidden warning: meminfo.c:52
+make[3]: *** [../scripts/Makefile.build:288: fs/proc/meminfo.o] Error 1
+make[2]: *** [../scripts/Makefile.build:558: fs/proc] Error 2
+make[1]: *** [/mnt/gentoo/home/ernes/Descargas/kernel-msm/kernel/msm-5.4/Makefile:1867: fs] Error 2
+  CC      crypto/asymmetric_keys/pkcs7_verify.o
+  CC      crypto/asymmetric_keys/x509.asn1.o
+  CC      crypto/asymmetric_keys/x509_akid.asn1.o
+  CC      crypto/asymmetric_keys/x509_cert_parser.o
+  CC      crypto/asymmetric_keys/pkcs7.asn1.o
+  CC      crypto/asymmetric_keys/pkcs7_parser.o
+  CC      crypto/api.o
+  CC      crypto/cipher.o
+  CC      crypto/compress.o
+  AR      crypto/asymmetric_keys/built-in.a
+  CC      crypto/memneq.o
+  CC      crypto/crypto_engine.o
+  CC      crypto/algapi.o
+  CC      crypto/scatterwalk.o
+  CC      crypto/proc.o
+  CC      crypto/aead.o
+  CC      crypto/ablkcipher.o
+  CC      crypto/blkcipher.o
+  CC      crypto/skcipher.o
+  CC      crypto/seqiv.o
+  CC      crypto/echainiv.o
+  CC      crypto/ahash.o
+  CC      crypto/shash.o
+  CC      crypto/akcipher.o
+  CC      crypto/kpp.o
+  ASN.1   crypto/rsapubkey.asn1.[ch]
+  ASN.1   crypto/rsaprivkey.asn1.[ch]
+  CC      crypto/rsa.o
+  CC      crypto/rsa_helper.o
+  CC      crypto/rsa-pkcs1pad.o
+  CC      crypto/acompress.o
+  CC      crypto/scompress.o
+  CC      crypto/algboss.o
+  CC      crypto/testmgr.o
+  CC      crypto/cmac.o
+  CC      crypto/hmac.o
+  CC      crypto/crypto_null.o
+  CC      crypto/md5.o
+  CC      crypto/sha1_generic.o
+  CC      crypto/sha256_generic.o
+  CC      crypto/sha512_generic.o
+  CC      crypto/blake2b_generic.o
+  CC      crypto/gf128mul.o
+  CC      crypto/ecb.o
+  CC      crypto/cbc.o
+  CC      crypto/cts.o
+  CC      crypto/xts.o
+  CC      crypto/ctr.o
+  CC      crypto/adiantum.o
+  CC      crypto/nhpoly1305.o
+  CC      crypto/gcm.o
+  CC      crypto/ccm.o
+  CC      crypto/chacha20poly1305.o
+  CC      crypto/cryptd.o
+  CC      crypto/des_generic.o
+  CC      crypto/aes_generic.o
+  CC      crypto/chacha_generic.o
+  CC      crypto/poly1305_generic.o
+  CC      crypto/deflate.o
+  CC      crypto/crc32c_generic.o
+  CC      crypto/crc32_generic.o
+  CC      crypto/authenc.o
+  CC      crypto/authencesn.o
+  CC      crypto/lz4.o
+  CC      crypto/rng.o
+  CC      crypto/ansi_cprng.o
+  CC      crypto/drbg.o
+  CC      crypto/jitterentropy.o
+  CC      crypto/jitterentropy-kcapi.o
+  CC      crypto/ghash-generic.o
+  CC      crypto/zstd.o
+  CC      crypto/ecc.o
+  CC      crypto/essiv.o
+  CC      crypto/ecdh.o
+  CC      crypto/ecdh_helper.o
+  CC      crypto/hash_info.o
+  CC      crypto/simd.o
+  CC [M]  crypto/lzo.o
+  CC [M]  crypto/lzo-rle.o
+  CC      crypto/rsapubkey.asn1.o
+  CC      crypto/rsaprivkey.asn1.o
+  AR      crypto/built-in.a
+make[1]: Leaving directory '/mnt/gentoo/home/ernes/Descargas/kernel-msm/kernel/msm-5.4/out'
+make: *** [Makefile:190: sub-make] Error 2
